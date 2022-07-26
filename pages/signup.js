@@ -107,7 +107,7 @@ const Signup = () => {
         },
         body: JSON.stringify(values),
       };
-      const res = await fetch(`http://localhost:3000/api/signup`, option);
+      const res = await fetch(`/api/signup`, option);
       const signupData = await res.json();
 
       if (signupData.error) {

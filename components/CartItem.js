@@ -11,7 +11,7 @@ const CartItem = ({ product }) => {
   const { token } = parseCookies();
   const handleRemove = async (pid) => {
     console.log("handle remove", pid);
-    const res = await fetch(`http://localhost:3000/api/cart`, {
+    const res = await fetch(`/api/cart`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

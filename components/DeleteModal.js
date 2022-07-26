@@ -11,7 +11,7 @@ export default function DeleteModal({ product }) {
   const handleShow = () => setShow(true);
   console.log("ID FOR DELETE PRODUCT:", product._id);
   const deleteProduct = async () => {
-    const res = await fetch(`http://localhost:3000/api/product/${product._id}`, {
+    const res = await fetch(`/api/product/${product._id}`, {
       method: "DELETE",
     });
     console.log(res);

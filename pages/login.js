@@ -20,7 +20,7 @@ const login = () => {
       },
       body: JSON.stringify(values),
     };
-    const res = await fetch(`http://localhost:3000/api/login`, option);
+    const res = await fetch(`/api/login`, option);
     const loginData = await res.json();
     console.log("loginData", loginData);
 

@@ -31,7 +31,7 @@ const AddProduct = () => {
     e.preventDefault();
     try {
       const mediaUrl = await imageUpload();
-      const res = await fetch(`http://localhost:3000/api/products`, {
+      const res = await fetch(`/api/products`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
